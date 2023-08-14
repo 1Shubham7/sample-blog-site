@@ -6,7 +6,7 @@ hi
 {{ end }} -->
 
 <ul>
-    {{ range .Site.RegularPages }}
+    {{ range .Site.Sections }}
         <li>
           <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
           <p>{{ .Content }}</p>

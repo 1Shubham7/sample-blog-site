@@ -1,11 +1,13 @@
 <h1>This is a Blogs page</h1>
 
 <ul>
-    {{ range .Site.RegularPages }}
+    {{ range .Site.Pages }}
         <li>
           <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
           <p>{{ .Content }}</p>
+          <h3>Variables  -  {{ .Params.varone }}</h3>
+          <h3>{{ $myvar := "hello ji"  }}</h3>
+          <h1>{{ $myvar }}</h1>
         </li>
-      {{ end }}
-  </ul>
-{{/*  The list shows a fake template  */}}
+    {{ end }}
+</ul>

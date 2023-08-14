@@ -1,3 +1,17 @@
 <h1>Blogs</h1>
 
 {{ .Content }}
+
+<h1>dog and cat </h1>
+
+{{ $dog := "dog" }}
+{{ $cat := "cat" }}
+{{ if eq $dog $cat }}
+
+dog is cat
+
+{{ else }}
+
+dog is not cat
+
+{{ end }}
