@@ -8,3 +8,6 @@ varone: "one"
 ---
 
 Blog 1
+
+
+ {{< sentence  >}}
