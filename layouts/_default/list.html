@@ -1,0 +1,11 @@
+<h1>This is a list page</h1>
+
+<ul>
+    {{ range .Site.RegularPages }}
+        <li>
+          <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+          <p>{{ .Content }}</p>
+        </li>
+      {{ end }}
+  </ul>
+{{/*  The list shows a fake template  */}}
