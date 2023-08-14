@@ -1,11 +1,10 @@
-hi
 
-<!-- Hello 
-{{ .Content }}
-{{ range .Pages}}
-{{ end }} -->
 
-<ul>
+<h1>Home Page</h1>
+
+<h1>Consider this as Navbar</h1>
+
+<ul style="color: red;">
     {{ range .Site.Sections }}
         <li>
           <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
@@ -14,4 +13,3 @@ hi
       {{ end }}
   </ul>
 
- 
