@@ -1,1 +1,15 @@
 hi
+
+<!-- Hello 
+{{ .Content }}
+{{ range .Pages}}
+{{ end }} -->
+
+<ul>
+    {{ range .Site.RegularPages }}
+        <li>
+          <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+          <p>{{ .Content }}</p>
+        </li>
+      {{ end }}
+  </ul>
